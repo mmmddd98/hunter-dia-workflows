@@ -1,0 +1,10 @@
+dataset: examples/output/final_peptidoforms.parquet
+calibration: examples/irt_anchors.csv
+output: examples/output/final_peptidoforms_irt.parquet
+coefficients: examples/output/irt_coefficients.json
+transformer:
+  method: robust
+  run_column: raw_file_id
+  observed_column: observed_rt
+  target_column: reference_irt
+  minimum_anchors: 5

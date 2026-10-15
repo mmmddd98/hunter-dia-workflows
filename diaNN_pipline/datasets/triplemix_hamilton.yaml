@@ -1,0 +1,48 @@
+meta:
+  dataset_id: triplemix_hamilton
+  experiment_description: TripleMix HUNTER benchmark dataset acquired with the Hamilton
+    preparation workflow.
+organism:
+  name: triplemix
+  taxonomy_id: 0
+fasta:
+  fasta: reference_fasta/triplemix.fasta
+  fasta_swiss: ''
+  contaminants_fasta: ''
+sources:
+  base_dir: triplemix/hamilton
+  hunter:
+    experimental_template_file: exp.txt
+    acquisition:
+      date: '2026-01-25'
+      instrument: exploris
+    data:
+      dirs:
+        train: train
+        test: test
+      train_files:
+      - EX011062
+      - EX011064
+      - EX011065
+      - EX011067
+      - EX011068
+      - EX011069
+      - EX011072
+      - EX011074
+      - EX011075
+      - EX011077
+      - EX011078
+      - EX011079
+      - EX011082
+      - EX011084
+      - EX011085
+      - EX011087
+      - EX011088
+      - EX011089
+      test_files:
+      - EX011063
+      - EX011070
+      - EX011073
+      - EX011080
+      - EX011083
+      - EX011090

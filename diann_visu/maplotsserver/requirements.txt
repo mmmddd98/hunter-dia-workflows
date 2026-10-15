@@ -1,0 +1,9 @@
+dash
+logomaker
+matplotlib
+numpy
+pandas
+plotly
+polars
+pyarrow
+scipy

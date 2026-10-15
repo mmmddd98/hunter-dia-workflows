@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rt-dataset"
+version = "0.1.0"
+description = "Traceable preparation of peptide retention-time training datasets"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "pyarrow>=12",
+    "PyYAML>=6",
+    "scipy>=1.10",
+    "statsmodels>=0.14",
+    "matplotlib>=3.7",
+    "seaborn>=0.12",
+    "XCaliburMethodReader>=0.1.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7.4"]
+calibrt = ["pycalib-rt==0.1.2"]
+
+[project.scripts]
+rt-dataset = "rt_dataset.cli:main"
+carafe-finetune-data = "fine_tune_catalog:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rt_dataset*"]
+
+[tool.setuptools]
+py-modules = ["fine_tune_catalog"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["."]

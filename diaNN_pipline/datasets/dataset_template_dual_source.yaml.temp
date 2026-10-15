@@ -1,0 +1,59 @@
+# Dataset metadata template for DIA-NN pipeline with optional prehunter/hunter sources
+# Copy this file, rename it to a dataset-specific filename, and fill in values.
+
+meta:
+  dataset_id: "your_dataset_id"
+  experiment_description: "short description of the dataset"
+
+organism:
+  name: "Homo sapiens"
+  taxonomy_id: 9606
+
+fasta:
+  fasta: "your_main_fasta.fasta"
+  fasta_swiss: ""
+  contaminants_fasta: ""
+
+sources:
+  base_dir: "path/to/data/base_dir"
+  prehunter:
+    experimental_template_file: "template_or_description_file"
+
+    acquisition:
+      person: "your_initials"
+      date: "YYYY-MM-DD"
+      instrument: "your_instrument"
+
+    data:
+      dirs:
+        train: "train"
+        test: "test"
+
+      train_files:
+        - "sample_train_01"
+        - "sample_train_02"
+
+      test_files:
+        - "sample_test_01"
+        - "sample_test_02"
+
+  hunter:
+    experimental_template_file: "template_or_description_file"
+
+    acquisition:
+      person: "your_initials"
+      date: "YYYY-MM-DD"
+      instrument: "your_instrument"
+
+    data:
+      dirs:
+        train: "train"
+        test: "test"
+
+      train_files:
+        - "sample_train_01"
+        - "sample_train_02"
+
+      test_files:
+        - "sample_test_01"
+        - "sample_test_02"

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maplot"
+version = "0.1.0"
+description = "DIA-NN visualization helpers"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib",
+    "pandas",
+    "polars",
+]
+
+[project.optional-dependencies]
+upset = [
+    "upsetplot",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,6 @@
+dataset: examples/output/final_dataset.parquet
+output: examples/output/final_peptidoforms.parquet
+aggregation:
+  level: peptidoform
+  method: median
+  within_raw_file_first: true

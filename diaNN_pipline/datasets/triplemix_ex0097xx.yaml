@@ -1,0 +1,29 @@
+meta:
+  dataset_id: triplemix_ex0097xx
+  experiment_description: TripleMix HUNTER benchmark dataset EX0097XX.
+organism:
+  name: triplemix
+  taxonomy_id: 0
+fasta:
+  fasta: reference_fasta/triplemix.fasta
+  fasta_swiss: ''
+  contaminants_fasta: ''
+sources:
+  base_dir: triplemix/ex0097xx
+  hunter:
+    experimental_template_file: experiment_annotation.tsv
+    acquisition:
+      date: '2025-10-29'
+      instrument: exploris
+    data:
+      dirs:
+        train: train
+        test: test
+      train_files:
+      - EX009759
+      - EX009760
+      - EX009766
+      - EX009767
+      test_files:
+      - EX009761
+      - EX009768

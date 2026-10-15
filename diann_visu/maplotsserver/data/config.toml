@@ -1,0 +1,12 @@
+# Add further mounted DIA-NN output roots below. The first entry is the
+# existing local output and is intentionally kept as the default source.
+
+[[data_roots]]
+key = "local"
+path = "./diann_out"
+cluster = "local"
+
+[[data_roots]]
+key = "uni_cluster"
+path = "./shared_data/cluster_out"
+cluster = "cluster"

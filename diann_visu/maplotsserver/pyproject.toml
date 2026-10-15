@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maplotsserver"
+version = "0.1.0"
+description = "Dash server for DIA-NN/maplot experiment visualisation"
+requires-python = ">=3.10"
+dependencies = [
+    "dash",
+    "logomaker",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "plotly",
+    "polars",
+    "pyarrow",
+    "scipy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["data*", "pages*"]

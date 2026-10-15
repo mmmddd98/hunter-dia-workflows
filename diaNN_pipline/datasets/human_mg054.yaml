@@ -1,0 +1,34 @@
+meta:
+  dataset_id: human_mg054
+  experiment_description: Human HUNTER benchmark dataset MG054.
+organism:
+  name: Homo sapiens
+  taxonomy_id: 9606
+fasta:
+  fasta: reference_fasta/human_mg054.fasta
+  fasta_swiss: reference_fasta/human_mg054_swiss.fasta
+  contaminants_fasta: ''
+sources:
+  base_dir: human/mg054
+  hunter:
+    experimental_template_file: experiment_annotation_corrected.tsv
+    acquisition:
+      instrument: Exploris
+    data:
+      dirs:
+        train: train
+        test: test
+      train_files:
+      - EX009121
+      - EX009122
+      - EX009128
+      - EX009129
+      - EX009133
+      - EX009134
+      test_files:
+      - EX009123
+      - EX009124
+      - EX009126
+      - EX009127
+      - EX009131
+      - EX009132

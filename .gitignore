@@ -1,0 +1,56 @@
+# Local configuration and editor state
+.env
+*.local.cfg
+diaNN_pipline/.env
+diaNN_pipline/config/machines/*.cfg
+!diaNN_pipline/config/machines/template.cfg
+diaNN_pipline/config/carafe_machines/*.cfg
+!diaNN_pipline/config/carafe_machines/template.cfg
+.vscode/
+*.code-workspace
+
+# Python environments, build and cache artifacts
+.venv/
+venv/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Optional local workspaces
+local_notes/
+local_analysis/
+external_repositories/
+
+# Private inputs, machine-specific datasets, and generated results
+diaNN_pipline/datasets/*.yaml
+!diaNN_pipline/datasets/c_elegans_md046_md048.yaml
+!diaNN_pipline/datasets/triplemix_ex0097xx.yaml
+!diaNN_pipline/datasets/triplemix_hamilton.yaml
+!diaNN_pipline/datasets/human_mg054.yaml
+diaNN_pipline/datasets_save/
+diaNN_pipline/start_cmds/
+diaNN_pipline/auto_resume_logs/
+data_collect/finetune_catalog/datasets.yaml
+data_collect/generated_raw_meta/
+reports/
+local_fasta/
+local_test_data/
+**/test_data/raw_files/
+*.parquet
+*.mzML
+*.raw
+*.fasta
+*.fastq
+
+# Local caches and external checkouts
+.codex
+extern/r/TermineR
+diann_visu/post_run_reports/adapter_test/**/*.tsv
+diann_visu/post_run_reports/adapter_test/**/*.csv
+diann_visu/post_run_reports/termini_annotator_test/**/*.tsv
+diann_visu/post_run_reports/termini_annotator_test/**/*.csv
+diann_visu/post_run_reports/termini_annotator_test/**/*.fasta

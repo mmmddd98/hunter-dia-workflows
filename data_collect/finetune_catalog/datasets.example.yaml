@@ -1,0 +1,28 @@
+# Copy this file to datasets.yaml and replace every /path/to/... value locally.
+# datasets.yaml is intentionally ignored because source locations can reveal
+# usernames, server mount points, and unpublished experiment names.
+output_root: /path/to/trainingdata
+
+rt_normalization:
+  policy: strict_same_global_rt_max
+  rt_max_tolerance_minutes: 0.25
+
+datasets:
+  - id: example_source_v1
+    enabled: true
+    original_experiment_name: example_experiment
+    source_step2_experiment: example_experiment
+    organism: example_organism
+    gradient_minutes: 60.0
+    instrument: example_instrument
+    comment: Replace this entry with local source metadata.
+    carafe_job_dir: /path/to/carafe/job
+    diann_step2_report: /path/to/step2_report.parquet
+    train_mzml_dir: /path/to/train_mzml
+    carafe_output_dir: /path/to/carafe/job/carafe_output
+
+builds:
+  - id: example_rtms2_v1
+    datasets: [example_source_v1]
+    include_ms2: true
+    comment: Example shared training input for Carafe2 and DIA-NN.

@@ -1,0 +1,24 @@
+input_paths:
+  - examples/input
+output_dir: examples/output
+metadata_path: examples/raw_file_metadata.csv
+metadata_regex: false
+q_value_threshold: 0.01
+exclude_decoys: true
+incremental: true
+csv_export: false
+reader:
+  required_columns:
+    - sequence
+    - raw_file_name
+    - observed_rt
+  preserve_unknown_columns: true
+  column_mapping:
+    sequence: Stripped.Sequence
+    modified_sequence: Modified.Sequence
+    raw_file_name: Run
+    q_value: Q.Value
+    observed_rt: RT
+    charge: Precursor.Charge
+    intensity: Precursor.Quantity
+    is_decoy: Decoy

@@ -1,0 +1,55 @@
+meta:
+  dataset_id: c_elegans_md046_md048
+  experiment_description: Combined C. elegans HUNTER benchmark spanning MD046, MD047
+    and MD048; MD048 supplies the held-out files.
+organism:
+  name: Caenorhabditis elegans
+  taxonomy_id: 6239
+fasta:
+  fasta: reference_fasta/c_elegans.fasta
+  contaminants_fasta: ''
+acquisition:
+  instrument: Exploris
+data:
+  base_dir: c_elegans
+  dirs:
+    train: ''
+    test: ''
+  train_files:
+  - md046/hunter/train/EX011973.mzML
+  - md046/hunter/train/EX011974.mzML
+  - md046/hunter/train/EX011979.mzML
+  - md046/hunter/train/EX011980.mzML
+  - md046/hunter/train/EX011981.mzML
+  - md046/hunter/test/EX011975.mzML
+  - md046/hunter/test/EX011976.mzML
+  - md046/hunter/test/EX011977.mzML
+  - md046/hunter/test/EX011982.mzML
+  - md046/hunter/test/EX011983.mzML
+  - md046/hunter/train/EX011972.mzML
+  - md046/hunter/test/EX011984.mzML
+  - md047/hunter/train/EX012097.mzML
+  - md047/hunter/train/EX012098.mzML
+  - md047/hunter/train/EX012099.mzML
+  - md047/hunter/train/EX012100.mzML
+  - md047/hunter/train/EX012101.mzML
+  - md047/hunter/test/EX012103.mzML
+  - md047/hunter/test/EX012104.mzML
+  - md047/hunter/test/EX012105.mzML
+  - md047/hunter/test/EX012106.mzML
+  - md047/hunter/test/EX012107.mzML
+  - md047/hunter/train/EX012096.mzML
+  - md047/hunter/test/EX012108.mzML
+  - md048/hunter/train/EX012132.mzML
+  - md048/hunter/train/EX012133.mzML
+  - md048/hunter/train/EX012138.mzML
+  - md048/hunter/train/EX012139.mzML
+  - md048/hunter/train/EX012140.mzML
+  - md048/hunter/train/EX012131.mzML
+  test_files:
+  - md048/hunter/test/EX012134.mzML
+  - md048/hunter/test/EX012135.mzML
+  - md048/hunter/test/EX012136.mzML
+  - md048/hunter/test/EX012141.mzML
+  - md048/hunter/test/EX012142.mzML
+  - md048/hunter/test/EX012143.mzML

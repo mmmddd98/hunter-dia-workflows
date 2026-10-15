@@ -1,0 +1,49 @@
+
+<svg width="1400" height="420" viewBox="0 0 1400 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06203d"/>
+      <stop offset="100%" stop-color="#02101f"/>
+    </linearGradient>
+
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7be63b"/>
+      <stop offset="100%" stop-color="#52c41a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="420" fill="#0b0f14"/>
+
+  <circle cx="180" cy="210" r="140" fill="url(#bgGrad)"/>
+
+  <text x="180" y="190"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="120"
+        font-weight="700"
+        text-anchor="middle"
+        fill="white">m</text>
+
+  <path d="M 80 270 C 120 300, 180 300, 280 270"
+        stroke="#d9dde3"
+        stroke-width="12"
+        fill="none"
+        stroke-linecap="round"/>
+
+  <circle cx="80" cy="270" r="20" fill="#3d9cff"/>
+  <circle cx="150" cy="285" r="20" fill="#d9dde3"/>
+  <circle cx="220" cy="285" r="20" fill="#d9dde3"/>
+  <circle cx="280" cy="270" r="20" fill="#7be63b"/>
+
+  <text x="420" y="240"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="170"
+        font-weight="700"
+        fill="white">map</text>
+
+  <text x="790" y="240"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="170"
+        font-weight="700"
+        fill="url(#greenGrad)">lot</text>
+
+</svg>

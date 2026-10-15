@@ -1,0 +1,10 @@
+# Dataset parsing and pipeline helpers
+PyYAML
+
+# Step-5 evaluation scripts, RAM plots and automatic MA-plot report
+numpy
+pandas
+polars
+matplotlib
+plotly
+pyarrow

@@ -1,0 +1,26 @@
+{
+  "name": "example RT hyperparameter sweep",
+  "state_root": "/tmp/example_rt_sweep_state",
+  "progress_regex": "epoch=(\\d+)/(\\d+)",
+  "jobs": [
+    {
+      "id": "seed_2024/config_a",
+      "workdir": "/path/to/repository",
+      "commands": [
+        [
+          "python3",
+          "train.py",
+          "--seed",
+          "2024",
+          "--config",
+          "config_a.json",
+          "--output",
+          "/path/to/output/seed_2024/config_a"
+        ]
+      ],
+      "completion_files": [
+        "/path/to/output/seed_2024/config_a/final_metrics.json"
+      ]
+    }
+  ]
+}

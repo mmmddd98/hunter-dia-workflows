@@ -1,0 +1,12 @@
+dataset: examples/output/predataset.parquet
+output: examples/output/final_dataset.parquet
+report: examples/output/filter_report.json
+filters:
+  maximum_q_value: 0.01
+  exclude_decoys: true
+  require_valid_rt: true
+  minimum_peptide_length: 7
+  maximum_peptide_length: 35
+  allowed_charges: [2, 3, 4]
+  hunter_status: [HUNTER, PRE_HUNTER]
+  minimum_observations_per_peptidoform: 2
